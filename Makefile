@@ -23,14 +23,8 @@ LIBFT		:= $(LIBFT_DIR)libft.a
 CC			:= cc
 
 
-#MAC1		= -I /Users/psydenst/.brew/opt/readline/include #mac42 pedro compilation
-#MAC2		= -L /Users/psydenst/.brew/opt/readline/lib
-
-#MAC1		= -I /opt/homebrew/opt/readline/include #local pedro compilation
-#MAC2		= -L /opt/homebrew/opt/readline/lib # local pedro compilation
-
-MAC1		= -I/Users/tde-souz/.brew/opt/readline/include	#tde-souz
-MAC2		= -L/Users/tde-souz/.brew/opt/readline/lib		#tde-souz
+MAC1		= -I/INCLUDE_YOUR_PATH_OF_READLINE_INCLUDE #ex: -I /Users/user_name/.brew/opt/readline/include	#tde-souz
+MAC2		= -L/INCLUDE_YOUR_PATH_OF_READLINE_LIB		#tde-souz
 # CFLAGS		= -Wall -Wextra -Werror -g $(MAC1) $(MAC2) $(INCLUDES) # MAC COMPILATION
 ifeq ($(CURRENT_OS), Linux)
 CFLAGS		= -Wall -Wextra -Werror -g $(INCLUDES) -fPIE # LINUX COMPILATION
