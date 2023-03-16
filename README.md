@@ -72,7 +72,6 @@ brew link --force readline
 
 Add the path to the lib. IMPORTANT: The code won't compile if you don't add the correct path in Makefile. 
 
-Replace ~/.zshrc with ~/.bashrc if you use bash instead of zsh
 ```
 echo 'export C_INCLUDE_PATH="/usr/local/opt/readline/include:$C_INCLUDE_PATH"' >> ~/.zshrc
 ```
