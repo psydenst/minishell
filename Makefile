@@ -23,13 +23,13 @@ LIBFT		:= $(LIBFT_DIR)libft.a
 CC			:= cc
 
 
-MAC1		= -I/INCLUDE_YOUR_PATH_OF_READLINE_INCLUDE #ex: -I /Users/user_name/.brew/opt/readline/include	#tde-souz
-MAC2		= -L/INCLUDE_YOUR_PATH_OF_READLINE_LIB		#tde-souz
-# CFLAGS		= -Wall -Wextra -Werror -g $(MAC1) $(MAC2) $(INCLUDES) # MAC COMPILATION
+MAC1		= -I /opt/homebrew/opt/readline/include #my local path to readline include
+MAC2		= -L /opt/homebrew/opt/readline/lib #my local path to readline lib
+
 ifeq ($(CURRENT_OS), Linux)
-CFLAGS		= -Wall -Wextra -Werror -g $(INCLUDES) -fPIE # LINUX COMPILATION
+CFLAGS		= -Wall -Wextra -Werror  $(INCLUDES) -fPIE # LINUX COMPILATION
 else
-CFLAGS		= -Wall -Wextra -Werror -g $(MAC1) $(MAC2) $(INCLUDES) # MAC COMPILATION
+CFLAGS		= -Wall -Wextra -Werror $(MAC1) $(MAC2) $(INCLUDES) # MAC COMPILATION
 endif
 # **************************************************************************** #
 
