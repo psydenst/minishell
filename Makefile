@@ -23,7 +23,7 @@ LIBFT		:= $(LIBFT_DIR)libft.a
 CC			:= cc
 
 
-MAC1		= -I /opt/homebrew/opt/readline/include #my local path to readline include
+MAC1		= -I /opt/homebrew/opt/readline/include #my local path to readline include, you should change this and include yours. 
 MAC2		= -L /opt/homebrew/opt/readline/lib #my local path to readline lib
 
 ifeq ($(CURRENT_OS), Linux)
